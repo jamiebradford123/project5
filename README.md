@@ -18,66 +18,69 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
 
 * We believe that cherry leaves which have powdery mildew have clear signs/ marks which will allow Farky & Foods to differentiate between healthy and unhealthy cherry trees
   * An average image study can help to investigate it
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
 
 * **Business Requirement 1**: Visually differentiate a healthy cherry leaf from one with powdery mildew (Data Visualisation).
 	* We will display the "mean" and "standard deviation" images for healthy and unhealthy cherry trees.
  	* We will display the difference between an average healthy leaf and an average powdery mildew leaf.
 	* We will display an image montage for either a healthy leaf or a powdery mildew leaf.
-	
-	
 
 * **Business Requirement 2**:  Predicting if a cherry leaf is healthy or contains powdery mildew (Classification).
 	* We want to predict if a cherry leaf is healthy or contains powdery mildew. 
 	* We want to build a binary classifier and generate reports.
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
 
 * What are the business requirements?
 	* The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
 	* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
-\n 
+
 * Is there any business requirement that can be answered with conventional data analysis?
 	* Yes, we can use conventional data analysis to conduct a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
-Does the client need a dashboard or an API endpoint?
-The client needs a dashboard.
-What does the client consider as a successful project outcome?
-A study showing how to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
-Also, the capability to predict if a cherry leaf is healthy or contains powdery mildew.
-Can you break down the project into Epics and User Stories?
-Information gathering and data collection.
-Data visualization, cleaning, and preparation.
-Model training, optimization and validation.
-Dashboard planning, designing, and development.
-Dashboard deployment and release.
-Ethical or Privacy concerns?
-The client provided the data under an NDA (non-disclosure agreement), therefore the data should only be shared with professionals that are officially involved in the project.
-Does the data suggest a particular model?
-The data suggests a binary classifier, indicating whether a particular cherry leaf is healthy or contains powdery mildew.
-What are the model's inputs and intended outputs?
-The input is a cherry leaf image and the output is a prediction of whether the cherry leaf is healthy or contains powdery mildew.
-What are the criteria for the performance goal of the predictions?
-We agreed with the client a degree of 97% accuracy.
-How will the client benefit?
-The client will not supply the market with a product of compromised quality.
 
-### MalariaClf
-* We want an ML model to predict if a cell is infected with malaria or not, based on historical image data. It is a supervised model, a 2-class, single-label, classification model.
-* Our ideal outcome is to provide the medical team a faster and more reliable diagnostic for malaria detection.
+* Does the client need a dashboard or an API endpoint?
+	* The client needs a dashboard.
+
+* What does the client consider as a successful project outcome?
+	* A study showing how to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+	* Also, the capability to predict if a cherry leaf is healthy or contains powdery mildew.
+
+* Can you break down the project into Epics and User Stories?
+	* Information gathering and data collection.
+	* Data visualization, cleaning, and preparation.
+	* Model training, optimization and validation.
+	* Dashboard planning, designing, and development.
+	* Dashboard deployment and release.
+
+* Ethical or Privacy concerns?
+	* The client provided the data under an NDA (non-disclosure agreement), therefore the data should only be shared with professionals that are officially involved in the project.
+
+* Does the data suggest a particular model?
+	* The data suggests a binary classifier, indicating whether a particular cherry leaf is healthy or contains powdery mildew.
+
+* What are the model's inputs and intended outputs?
+	* The input is a cherry leaf image and the output is a prediction of whether the cherry leaf is healthy or contains powdery mildew.
+
+* What are the criteria for the performance goal of the predictions?
+ * We agreed with the client a degree of 97% accuracy.
+
+* How will the client benefit?
+	* The client will not supply the market with a product of compromised quality.
+
+### Powdery Mildew Classifier
+* Aim - Create an ML model to predict if a leaf is healthy or contains powdery mildew, based on historical image data. It is a supervised model, a 2-class, single-label, classification model.
+* Ideal outcome - provide Farmy & Foods a faster and more reliable diagnostic for powdery mildew detection.
 * The model success metrics are
-	* Accuracy of 65% or above on the test set.
-* The model output is defined as a flag, indicating if the cell has malaria or not and the associated probability of being infected or not. The medical staff will do the blood smear workflow as usual and upload the picture to the App. The prediction is made on the fly (not in batches).
-* Heuristics: The current diagnostic needs an experienced staff and detailed inspection to distinguish infected and not infected cells. A blood smear sample is collected, mixed with a reagent and examined under the microscope. Visual criteria are used to detect malaria parasites. It leaves room to produce inaccurate diagnostics due to human error. On top of that, some specific hospital facilities with malaria centres need more, trained staff and expertise and are typically understaffed.
-* The training data to fit the model come from the [National Institutes of Health (NIH) Website](https://ceb.nlm.nih.gov/repositories/malaria-datasets/). This dataset contains about 26+ thousand images. We have extracted a subset of 5643 images from this dataset and saved it to [Kaggle dataset directory](https://www.kaggle.com/codeinstitute/malaria-cell-classification/) for quicker model training.
-	* Train data - target: infected or not; features: all images
+	* Accuracy of 97% or above on the test set.
+* The model output is defined as a flag, indicating if the leaf contains powdery mildew or not and the associated probability of being healthy or not. An employee will take a picture of a leaf and upload the picture to the App. The prediction is made on the fly (not in batches).
+* Heuristics: Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute. This is not scalable as the farm has thousands of trees and having enough experienced staff will require a lot of money and training. 
+* The training data to fit the model come from the [INSERT HERE](https://ceb.nlm.nih.gov/repositories/malaria-datasets/). This dataset contains about +4 thousand image. We have extracted a subset of 5643 images from this dataset and saved it to [Kaggle dataset directory](https://www.kaggle.com/codeinstitute/malaria-cell-classification/) for quicker model training.
+	* Train data - target: contains powdery mildew or not; features: all images
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
