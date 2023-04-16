@@ -41,6 +41,34 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## ML Business Case
 * In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
 
+* What are the business requirements?
+	* The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+	* The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+\n 
+* Is there any business requirement that can be answered with conventional data analysis?
+	* Yes, we can use conventional data analysis to conduct a study to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+Does the client need a dashboard or an API endpoint?
+The client needs a dashboard.
+What does the client consider as a successful project outcome?
+A study showing how to visually differentiate a cherry leaf that is healthy from one that contains powdery mildew.
+Also, the capability to predict if a cherry leaf is healthy or contains powdery mildew.
+Can you break down the project into Epics and User Stories?
+Information gathering and data collection.
+Data visualization, cleaning, and preparation.
+Model training, optimization and validation.
+Dashboard planning, designing, and development.
+Dashboard deployment and release.
+Ethical or Privacy concerns?
+The client provided the data under an NDA (non-disclosure agreement), therefore the data should only be shared with professionals that are officially involved in the project.
+Does the data suggest a particular model?
+The data suggests a binary classifier, indicating whether a particular cherry leaf is healthy or contains powdery mildew.
+What are the model's inputs and intended outputs?
+The input is a cherry leaf image and the output is a prediction of whether the cherry leaf is healthy or contains powdery mildew.
+What are the criteria for the performance goal of the predictions?
+We agreed with the client a degree of 97% accuracy.
+How will the client benefit?
+The client will not supply the market with a product of compromised quality.
+
 ### MalariaClf
 * We want an ML model to predict if a cell is infected with malaria or not, based on historical image data. It is a supervised model, a 2-class, single-label, classification model.
 * Our ideal outcome is to provide the medical team a faster and more reliable diagnostic for malaria detection.
