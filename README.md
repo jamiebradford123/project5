@@ -64,7 +64,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 	* The data suggests a binary classifier, indicating whether a particular cherry leaf is healthy or contains powdery mildew.
 
 * What are the model's inputs and intended outputs?
-	* The input is a cherry leaf image and the output is a prediction of whether the cherry leaf is healthy or contains powdery mildew.
+	* The input is an unlabelled cherry leaf image and the output is a labelled image with a prediction of whether the cherry leaf is healthy or contains powdery mildew.
 
 * What are the criteria for the performance goal of the predictions?
  * We agreed with the client a degree of 97% accuracy.
