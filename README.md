@@ -79,38 +79,32 @@ To save time in this process, the IT team suggested an ML system that detects in
 	* Accuracy of 97% or above on the test set.
 * The model output is defined as a flag, indicating if the leaf contains powdery mildew or not and the associated probability of being healthy or not. An employee will take a picture of a leaf and upload the picture to the App. The prediction is made on the fly (not in batches).
 * Heuristics: Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute. This is not scalable as the farm has thousands of trees and having enough experienced staff will require a lot of money and training. 
-* The training data to fit the model come from the [INSERT HERE](https://ceb.nlm.nih.gov/repositories/malaria-datasets/). This dataset contains about +4 thousand image. We have extracted a subset of 5643 images from this dataset and saved it to [Kaggle dataset directory](https://www.kaggle.com/codeinstitute/malaria-cell-classification/) for quicker model training.
+* The training data to fit the model come from the [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves). This dataset contains about +4 thousand images.
 	* Train data - target: contains powdery mildew or not; features: all images
-
-## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-* Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
 
 ## Dashboard Design (Streamlit App User Interface)
 
 ### Page 1: Quick Project Summary
 * Quick project summary
 	* General Information
-		* Malaria is a parasitic infection transmitted by the bite of infected female Anopheles mosquitoes.
-		* A blood smear sample is collected, mixed with a reagent and examined in the microscope. Visual criteria are used to detect malaria parasites. 
-		* According to WHO, in 2019, there were an estimated 229 million cases of malaria worldwide and an estimated 409 thousand deaths due to this disease. Children <5 years are the most vulnerable group, accounting for 67% (274 thousand) of all malaria deaths worldwide in 2019.
-	* Project Dataset
-		* The available dataset contains 5643 out of +27 thousand images taken from blood smear workflow (when a drop of blood it taken on a glass slide) of cells that are parasitised or uninfected with malaria.
-	* Link to additional information
+		* Powdery mildew is a fungal disease that affects many plant species. 
+		* An employee takes a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute.
+	* Project Dataset.
+		* The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew.
 	* Business requirements
-		*  The client is interested to have a study to visually differentiate between a parasite-contained and uninfected cell.
-		*  The client is interested in telling whether a given cell contains a malaria parasite or not.
+		* The company is concerned about supplying the market with a compromised quality product.
+		*  The company needs a faster more scalable option to check its thousands of trees. A ML system to detect an infected leaf would speed up the process
 
-### Page 2: Cells Visualizer
+### Page 2: Leaf Visualizer
 * It will answer business requirement 1
 	* Checkbox 1 - Difference between average and variability image
-	* Checkbox 2 - Differences between average parasitised and average uninfected cells
+	* Checkbox 2 - Differences between average healthy and average infected leaf
 	* Checkbox 3 - Image Montage
 
-### Page 3: Malaria Detector
-* Business requirement 2 information - "The client is interested in telling whether a given cell contains a malaria parasite or not."
-* Link to download a set of parasite-contained and uninfected cell images for live prediction.
-* User Interface with a file uploader widget. The user should upload multiple malaria cell images. It will display the image and a prediction statement, indicating if the cell is infected or not with malaria and the probability associated with this statement. 
+### Page 3: Powdery Mildew detector
+* Business requirement 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+* Link to download a set of infected and uninfected leaf images for live prediction.
+* User Interface with a file uploader widget. The user should upload multiple leaf images. It will display the image and a prediction statement, indicating if the leaf is infected or not with powdery mildew and the probability associated with this statement. 
 * Table with the image name and prediction results.
 * Download button to download table.
 
