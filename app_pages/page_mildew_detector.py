@@ -10,7 +10,7 @@ from src.machine_learning.predictive_analysis import (
                                                     plot_predictions_probabilities
                                                     )
 
-def age_mildew_detector_body():
+def page_mildew_detector_body():
     st.info(
         f"* The client is interested in telling whether a given leaf contains a Powdery Mildew "
         f"or not."
