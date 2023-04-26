@@ -109,7 +109,8 @@ To save time in this process, the IT team suggested an ML system that detects in
 * Download button to download table.
 
 ### Page 4: Project Hypothesis and Validation
-* Block for each project hypothesis, describe the conclusion and how you validated it.
+* We believe that cherry leaves which have powdery mildew have clear signs/ marks which will allow Farky & Foods to differentiate between healthy and unhealthy cherry trees
+  * An average image study can help to investigate it
 
 ### Page 5: ML Performance Metrics
 * Label Frequencies for Train, Validation and Test Sets
