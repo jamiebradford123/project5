@@ -8,10 +8,10 @@ def page_summary_body():
 
     st.info(
         f"**General Information**\n"
-        f"* Powdery mildew is a fungal disease that affects many plant species.  "
+        f"* Powdery mildew is a fungal disease that affects many plant species.\n "
         f"* An employee takes a few samples of tree leaves and verifying visually if the "
         f"leaf tree is healthy or has powdery mildew. If there is powdery mildew, the "
-        f"employee applies a specific compound to kill the fungus. The time spent applying"
+        f"employee applies a specific compound to kill the fungus. The time spent applying "
         f"this compound is 1 minute.\n\n"
         f"**Project Dataset**\n"
         f"* The dataset contains +4 thousand images taken from the  "

@@ -119,12 +119,11 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
-
+* No unfixed bugs currently
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: https://project-5-cherry.herokuapp.com/ 
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
@@ -142,8 +141,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+- Cherry leaves dataset taken from Kaggle - https://www.kaggle.com/datasets/codeinstitute/cherry-leaves
 
 ### Content 
 
@@ -153,11 +151,10 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
-
-
+- IMAGES USED
 
 ## Acknowledgements (optional)
-* Thank the people that provided support throughout this project.
+* I would like the thank my mentor Precious for guiding me on this project
+* The Code Institute for providing the github template used to complete this project as well as the walkthroughs and tutorials whihc provided the knowledge needed to complete this project
+* Niel McEwen for providing assistence on the slack chanel 
 
