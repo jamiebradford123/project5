@@ -19,8 +19,12 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
-* We believe that cherry leaves which have powdery mildew have clear signs/ marks which will allow Farky & Foods to differentiate between healthy and unhealthy cherry trees
-  * An average image study can help to investigate it
+1 - We believe that cherry leaves which have powdery mildew have clear signs/ marks which will allow Farky & Foods to differentiate between healthy and unhealthy cherry trees
+  * An average image study can validate this by looking at dominant features and comparing the variation between images.
+
+2 - We believe we can predict if a leaf is healthy or not based on images of the leaf to a 97% degree of accuracy
+  * Train and valididate a model using Convolutional neural Network (CNN) to achieve a model that achieves the required level of accuracy. 
+  * Data will be split into test, train and validation sets to complete this. 
 
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
@@ -117,6 +121,18 @@ To save time in this process, the IT team suggested an ML system that detects in
 * Model History - Accuracy and Losses
 * Model evaluation result
 
+## Testing
+
+Manual Testing was used to test the functionality of the steamlit site:
+
+- Each page opens correctly
+- All buttons on each page navigates correctly and takes the user to the correct page
+- All buttons on the Leaf Visualiser page works, displaying the correct information when clicked on, then hides the information when clicked on again
+- The image montage correctly displays either healthy or unhealthy leaves depending on what the user clicks
+- User can upload an image with no issues
+- The detector correctly displays whether the leaf is healthy or not, and provides a probabality with this
+- The analysis report correctly displays 
+- The page is still viewable on different screen sizes
 
 ## Unfixed Bugs
 * No unfixed bugs currently
@@ -137,17 +153,28 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Main Data Analysis and Machine Learning Libraries
 * Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+Python 3.8.12 - Used in the kernals to run the Jupyter Notebooks
+Jupyter Notebooks - Where all the code was run from to collect the data, visulaise and create the model
+GitHub - Used to host and deploy the website
+Gitpod - Used to create the code for the site
+Heroku - Used to deploy the website
 
+Libraries used
+NumPy 1.19.2
+Pandas 1.1.2
+Matplotlib 3.3.1
+Seaborn 0.11.0
+Plotly 4.12.0
+Streamlit 0.85.0
+Tensorflow 2.6.0
 
 ## Credits 
 
-- Cherry leaves dataset taken from Kaggle - https://www.kaggle.com/datasets/codeinstitute/cherry-leaves
 
 ### Content 
-
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- Cherry leaves dataset taken from Kaggle - https://www.kaggle.com/datasets/codeinstitute/cherry-leavese
+- Instructions on how to complete this project was based on Walkthrough 1 from The Code Institute
+- This Github template was provided by The Code Institute - https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves
 
 ### Media
 

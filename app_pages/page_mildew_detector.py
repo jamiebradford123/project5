@@ -18,7 +18,7 @@ def page_mildew_detector_body():
 
     st.write(
         f"* You can download a set of parasitised and uninfected leaf for live prediction. "
-        f"You can download the images from [here](https://www.kaggle.com/codeinstitute/cell-images-test)."
+        f"You can download the images from [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)."
         )
 
     st.write("---")
