@@ -13,7 +13,7 @@ def page_project_hypothesis_body():
         f"* Result - Average Image, Variability Image and Difference between Averages studies did not reveal "
         f"any clear pattern to differentiate one from another.\n\n"
         f"2 - We believe we can predict if a leaf is healthy or not based on images"
-        f"of the leaf to a 97% degree of accuracy \n"
+        f" of the leaf to a 97% degree of accuracy \n"
         f"* How to validate - Train and valididate a model using Convolutional neural Network (CNN) to achieve "
         f"a model that achieves the required level of accuracy. "
         f"that achieves the required level of accuracy.\n"

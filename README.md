@@ -152,14 +152,11 @@ Manual Testing was used to test the functionality of the steamlit site:
 
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
 Python 3.8.12 - Used in the kernals to run the Jupyter Notebooks
 Jupyter Notebooks - Where all the code was run from to collect the data, visulaise and create the model
 GitHub - Used to host and deploy the website
 Gitpod - Used to create the code for the site
 Heroku - Used to deploy the website
-
-Libraries used
 NumPy 1.19.2
 Pandas 1.1.2
 Matplotlib 3.3.1
@@ -176,9 +173,6 @@ Tensorflow 2.6.0
 - Instructions on how to complete this project was based on Walkthrough 1 from The Code Institute
 - This Github template was provided by The Code Institute - https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves
 
-### Media
-
-- IMAGES USED
 
 ## Acknowledgements (optional)
 * I would like the thank my mentor Precious for guiding me on this project

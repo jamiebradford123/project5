@@ -31,3 +31,12 @@ def page_summary_body():
         f"* thousands of trees. A ML system to detect an infected leaf would "
         f"* speed up the process "
         )
+    
+    st.write(
+    f"**Results**\n\n"
+    f"* The model can predict if a leaf is healthy to a degree of accuracy of 98%\n"
+    f"* Therefore it can be assumed that the ML model can quickly detect"
+    f" if the leaf is healthy, providing a scalable option for the business"
+    f"and the high accuracy prevents them from supplying the market with"
+    f"compromised quality product.\n"
+    )
